@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1EF4DA27820C5D009AF214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4D927820C5D009AF214 /* AppDelegate.swift */; };
+		0B1EF4DC27820C5D009AF214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4DB27820C5D009AF214 /* SceneDelegate.swift */; };
+		0B1EF4E127820C5D009AF214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1EF4DF27820C5D009AF214 /* Main.storyboard */; };
+		0B1EF4E427820C5D009AF214 /* SuburiMeter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4E227820C5D009AF214 /* SuburiMeter.xcdatamodeld */; };
+		0B1EF4E627820C61009AF214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1EF4E527820C61009AF214 /* Assets.xcassets */; };
+		0B1EF4E927820C61009AF214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1EF4E727820C61009AF214 /* LaunchScreen.storyboard */; };
+		0B1EF4F427820C62009AF214 /* SuburiMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4F327820C62009AF214 /* SuburiMeterTests.swift */; };
+		0B1EF4FE27820C62009AF214 /* SuburiMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4FD27820C62009AF214 /* SuburiMeterUITests.swift */; };
+		0B1EF50027820C62009AF214 /* SuburiMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1EF4FF27820C62009AF214 /* SuburiMeterUITestsLaunchTests.swift */; };
+		0B1EF50D27820CD5009AF214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B1EF50C27820CD5009AF214 /* GoogleService-Info.plist */; };
+		0B738D99278224E100E1B960 /* MeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738D98278224E100E1B960 /* MeterViewController.swift */; };
+		0B738D9B2782252D00E1B960 /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738D9A2782252D00E1B960 /* ResultListViewController.swift */; };
+		0B738D9D2782254200E1B960 /* ResultInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738D9C2782254200E1B960 /* ResultInputViewController.swift */; };
+		0B738DA127834DED00E1B960 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738DA027834DED00E1B960 /* ConfigViewController.swift */; };
+		0B738DA327932BF700E1B960 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0B738DA227932BF700E1B960 /* images */; };
+		0B738DA527932EA100E1B960 /* SuburiResultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738DA427932EA100E1B960 /* SuburiResultManager.swift */; };
+		0B738DA727933FD000E1B960 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B738DA627933FD000E1B960 /* Utility.swift */; };
+		0BF9797E2794764400B53125 /* SuburiResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9797D2794764400B53125 /* SuburiResult+CoreDataClass.swift */; };
+		0BF9798027B8D9E700B53125 /* SuburiMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9797F27B8D9E700B53125 /* SuburiMeterView.swift */; };
+		0BF9798227B96A2200B53125 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9798127B96A2200B53125 /* CommonViewController.swift */; };
+		0BF9798427E8D86800B53125 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9798327E8D86800B53125 /* ConfigManager.swift */; };
+		31D8257808A5D6DDCC664C08 /* Pods_SuburiMeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F08C92F52671B956AAA33EC /* Pods_SuburiMeterTests.framework */; };
+		33019D400D08DA1EF97988C7 /* Pods_SuburiMeter_SuburiMeterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C88860BB3660B54F23D1825 /* Pods_SuburiMeter_SuburiMeterUITests.framework */; };
+		AA9C17CAA36C6022702F6585 /* Pods_SuburiMeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA327D7D3B10F0312B943C3 /* Pods_SuburiMeter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B1EF4F027820C61009AF214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B1EF4CE27820C5D009AF214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1EF4D527820C5D009AF214;
+			remoteInfo = SuburiMeter;
+		};
+		0B1EF4FA27820C62009AF214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B1EF4CE27820C5D009AF214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1EF4D527820C5D009AF214;
+			remoteInfo = SuburiMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1EF4D627820C5D009AF214 /* SuburiMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuburiMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1EF4D927820C5D009AF214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B1EF4DB27820C5D009AF214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B1EF4E027820C5D009AF214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B1EF4E327820C5D009AF214 /* SuburiMeter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuburiMeter.xcdatamodel; sourceTree = "<group>"; };
+		0B1EF4E527820C61009AF214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1EF4E827820C61009AF214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B1EF4EA27820C61009AF214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1EF4EF27820C61009AF214 /* SuburiMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuburiMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1EF4F327820C62009AF214 /* SuburiMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuburiMeterTests.swift; sourceTree = "<group>"; };
+		0B1EF4F927820C62009AF214 /* SuburiMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuburiMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1EF4FD27820C62009AF214 /* SuburiMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuburiMeterUITests.swift; sourceTree = "<group>"; };
+		0B1EF4FF27820C62009AF214 /* SuburiMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuburiMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B1EF50C27820CD5009AF214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B738D98278224E100E1B960 /* MeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterViewController.swift; sourceTree = "<group>"; };
+		0B738D9A2782252D00E1B960 /* ResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
+		0B738D9C2782254200E1B960 /* ResultInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultInputViewController.swift; sourceTree = "<group>"; };
+		0B738DA027834DED00E1B960 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		0B738DA227932BF700E1B960 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		0B738DA427932EA100E1B960 /* SuburiResultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuburiResultManager.swift; sourceTree = "<group>"; };
+		0B738DA627933FD000E1B960 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0BF9797D2794764400B53125 /* SuburiResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuburiResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BF9797F27B8D9E700B53125 /* SuburiMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuburiMeterView.swift; sourceTree = "<group>"; };
+		0BF9798127B96A2200B53125 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		0BF9798327E8D86800B53125 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		0F08C92F52671B956AAA33EC /* Pods_SuburiMeterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuburiMeterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		535000B6AE0DF3D7BC4F9E49 /* Pods-SuburiMeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeter.debug.xcconfig"; path = "Target Support Files/Pods-SuburiMeter/Pods-SuburiMeter.debug.xcconfig"; sourceTree = "<group>"; };
+		5C88860BB3660B54F23D1825 /* Pods_SuburiMeter_SuburiMeterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuburiMeter_SuburiMeterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA327D7D3B10F0312B943C3 /* Pods_SuburiMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuburiMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A215F0FA27D95E8EA1C9A904 /* Pods-SuburiMeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeter.release.xcconfig"; path = "Target Support Files/Pods-SuburiMeter/Pods-SuburiMeter.release.xcconfig"; sourceTree = "<group>"; };
+		B11B5CCCCF79FA962CA97AD9 /* Pods-SuburiMeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeterTests.release.xcconfig"; path = "Target Support Files/Pods-SuburiMeterTests/Pods-SuburiMeterTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC5FB30B5E980FFD0C0B73A3 /* Pods-SuburiMeter-SuburiMeterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeter-SuburiMeterUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuburiMeter-SuburiMeterUITests/Pods-SuburiMeter-SuburiMeterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6F8C3777D2C3650780042EF /* Pods-SuburiMeterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeterTests.debug.xcconfig"; path = "Target Support Files/Pods-SuburiMeterTests/Pods-SuburiMeterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F166970FAE94468517A88313 /* Pods-SuburiMeter-SuburiMeterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuburiMeter-SuburiMeterUITests.release.xcconfig"; path = "Target Support Files/Pods-SuburiMeter-SuburiMeterUITests/Pods-SuburiMeter-SuburiMeterUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B1EF4D327820C5D009AF214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9C17CAA36C6022702F6585 /* Pods_SuburiMeter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4EC27820C61009AF214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D8257808A5D6DDCC664C08 /* Pods_SuburiMeterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4F627820C62009AF214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33019D400D08DA1EF97988C7 /* Pods_SuburiMeter_SuburiMeterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1EF4CD27820C5D009AF214 = {
+			isa = PBXGroup;
+			children = (
+				0B1EF4D827820C5D009AF214 /* SuburiMeter */,
+				0B1EF4F227820C62009AF214 /* SuburiMeterTests */,
+				0B1EF4FC27820C62009AF214 /* SuburiMeterUITests */,
+				0B1EF4D727820C5D009AF214 /* Products */,
+				94391E2B3E5DE702DBE7D49A /* Pods */,
+				740440FD5E3EC9B4DE1B1C08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B1EF4D727820C5D009AF214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EF4D627820C5D009AF214 /* SuburiMeter.app */,
+				0B1EF4EF27820C61009AF214 /* SuburiMeterTests.xctest */,
+				0B1EF4F927820C62009AF214 /* SuburiMeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B1EF4D827820C5D009AF214 /* SuburiMeter */ = {
+			isa = PBXGroup;
+			children = (
+				0B738DA227932BF700E1B960 /* images */,
+				0B1EF4D927820C5D009AF214 /* AppDelegate.swift */,
+				0B1EF4DB27820C5D009AF214 /* SceneDelegate.swift */,
+				0B738D98278224E100E1B960 /* MeterViewController.swift */,
+				0B738D9A2782252D00E1B960 /* ResultListViewController.swift */,
+				0B738DA027834DED00E1B960 /* ConfigViewController.swift */,
+				0B738D9C2782254200E1B960 /* ResultInputViewController.swift */,
+				0BF9798127B96A2200B53125 /* CommonViewController.swift */,
+				0BF9797F27B8D9E700B53125 /* SuburiMeterView.swift */,
+				0B738DA427932EA100E1B960 /* SuburiResultManager.swift */,
+				0BF9798327E8D86800B53125 /* ConfigManager.swift */,
+				0B1EF4DF27820C5D009AF214 /* Main.storyboard */,
+				0B1EF4E527820C61009AF214 /* Assets.xcassets */,
+				0B1EF4E727820C61009AF214 /* LaunchScreen.storyboard */,
+				0B1EF4EA27820C61009AF214 /* Info.plist */,
+				0B1EF4E227820C5D009AF214 /* SuburiMeter.xcdatamodeld */,
+				0B1EF50C27820CD5009AF214 /* GoogleService-Info.plist */,
+				0B738DA627933FD000E1B960 /* Utility.swift */,
+				0BF9797D2794764400B53125 /* SuburiResult+CoreDataClass.swift */,
+			);
+			path = SuburiMeter;
+			sourceTree = "<group>";
+		};
+		0B1EF4F227820C62009AF214 /* SuburiMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EF4F327820C62009AF214 /* SuburiMeterTests.swift */,
+			);
+			path = SuburiMeterTests;
+			sourceTree = "<group>";
+		};
+		0B1EF4FC27820C62009AF214 /* SuburiMeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1EF4FD27820C62009AF214 /* SuburiMeterUITests.swift */,
+				0B1EF4FF27820C62009AF214 /* SuburiMeterUITestsLaunchTests.swift */,
+			);
+			path = SuburiMeterUITests;
+			sourceTree = "<group>";
+		};
+		740440FD5E3EC9B4DE1B1C08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA327D7D3B10F0312B943C3 /* Pods_SuburiMeter.framework */,
+				5C88860BB3660B54F23D1825 /* Pods_SuburiMeter_SuburiMeterUITests.framework */,
+				0F08C92F52671B956AAA33EC /* Pods_SuburiMeterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94391E2B3E5DE702DBE7D49A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				535000B6AE0DF3D7BC4F9E49 /* Pods-SuburiMeter.debug.xcconfig */,
+				A215F0FA27D95E8EA1C9A904 /* Pods-SuburiMeter.release.xcconfig */,
+				CC5FB30B5E980FFD0C0B73A3 /* Pods-SuburiMeter-SuburiMeterUITests.debug.xcconfig */,
+				F166970FAE94468517A88313 /* Pods-SuburiMeter-SuburiMeterUITests.release.xcconfig */,
+				E6F8C3777D2C3650780042EF /* Pods-SuburiMeterTests.debug.xcconfig */,
+				B11B5CCCCF79FA962CA97AD9 /* Pods-SuburiMeterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B1EF4D527820C5D009AF214 /* SuburiMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1EF50327820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeter" */;
+			buildPhases = (
+				527BD564AFDA801BC6A8D218 /* [CP] Check Pods Manifest.lock */,
+				0B1EF4D227820C5D009AF214 /* Sources */,
+				0B1EF4D327820C5D009AF214 /* Frameworks */,
+				0B1EF4D427820C5D009AF214 /* Resources */,
+				9A24AA23EC8B6048649DF128 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuburiMeter;
+			productName = SuburiMeter;
+			productReference = 0B1EF4D627820C5D009AF214 /* SuburiMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B1EF4EE27820C61009AF214 /* SuburiMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1EF50627820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeterTests" */;
+			buildPhases = (
+				B6780B4FF7CAD8A92B6CFE56 /* [CP] Check Pods Manifest.lock */,
+				0B1EF4EB27820C61009AF214 /* Sources */,
+				0B1EF4EC27820C61009AF214 /* Frameworks */,
+				0B1EF4ED27820C61009AF214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1EF4F127820C61009AF214 /* PBXTargetDependency */,
+			);
+			name = SuburiMeterTests;
+			productName = SuburiMeterTests;
+			productReference = 0B1EF4EF27820C61009AF214 /* SuburiMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B1EF4F827820C62009AF214 /* SuburiMeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1EF50927820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeterUITests" */;
+			buildPhases = (
+				FB446820BB5B64D8223256C6 /* [CP] Check Pods Manifest.lock */,
+				0B1EF4F527820C62009AF214 /* Sources */,
+				0B1EF4F627820C62009AF214 /* Frameworks */,
+				0B1EF4F727820C62009AF214 /* Resources */,
+				E00210C9BE9CF8426FE946F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1EF4FB27820C62009AF214 /* PBXTargetDependency */,
+			);
+			name = SuburiMeterUITests;
+			productName = SuburiMeterUITests;
+			productReference = 0B1EF4F927820C62009AF214 /* SuburiMeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B1EF4CE27820C5D009AF214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0B1EF4D527820C5D009AF214 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0B1EF4EE27820C61009AF214 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B1EF4D527820C5D009AF214;
+					};
+					0B1EF4F827820C62009AF214 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 0B1EF4D527820C5D009AF214;
+					};
+				};
+			};
+			buildConfigurationList = 0B1EF4D127820C5D009AF214 /* Build configuration list for PBXProject "SuburiMeter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ja,
+				Base,
+			);
+			mainGroup = 0B1EF4CD27820C5D009AF214;
+			productRefGroup = 0B1EF4D727820C5D009AF214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B1EF4D527820C5D009AF214 /* SuburiMeter */,
+				0B1EF4EE27820C61009AF214 /* SuburiMeterTests */,
+				0B1EF4F827820C62009AF214 /* SuburiMeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B1EF4D427820C5D009AF214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B738DA327932BF700E1B960 /* images in Resources */,
+				0B1EF4E927820C61009AF214 /* LaunchScreen.storyboard in Resources */,
+				0B1EF50D27820CD5009AF214 /* GoogleService-Info.plist in Resources */,
+				0B1EF4E627820C61009AF214 /* Assets.xcassets in Resources */,
+				0B1EF4E127820C5D009AF214 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4ED27820C61009AF214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4F727820C62009AF214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527BD564AFDA801BC6A8D218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuburiMeter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A24AA23EC8B6048649DF128 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter/Pods-SuburiMeter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter/Pods-SuburiMeter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter/Pods-SuburiMeter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6780B4FF7CAD8A92B6CFE56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuburiMeterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E00210C9BE9CF8426FE946F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter-SuburiMeterUITests/Pods-SuburiMeter-SuburiMeterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter-SuburiMeterUITests/Pods-SuburiMeter-SuburiMeterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuburiMeter-SuburiMeterUITests/Pods-SuburiMeter-SuburiMeterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB446820BB5B64D8223256C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuburiMeter-SuburiMeterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B1EF4D227820C5D009AF214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B738DA527932EA100E1B960 /* SuburiResultManager.swift in Sources */,
+				0B738D9D2782254200E1B960 /* ResultInputViewController.swift in Sources */,
+				0B738DA727933FD000E1B960 /* Utility.swift in Sources */,
+				0BF9798027B8D9E700B53125 /* SuburiMeterView.swift in Sources */,
+				0B738D99278224E100E1B960 /* MeterViewController.swift in Sources */,
+				0B738DA127834DED00E1B960 /* ConfigViewController.swift in Sources */,
+				0B1EF4DA27820C5D009AF214 /* AppDelegate.swift in Sources */,
+				0B738D9B2782252D00E1B960 /* ResultListViewController.swift in Sources */,
+				0B1EF4DC27820C5D009AF214 /* SceneDelegate.swift in Sources */,
+				0BF9798227B96A2200B53125 /* CommonViewController.swift in Sources */,
+				0BF9797E2794764400B53125 /* SuburiResult+CoreDataClass.swift in Sources */,
+				0BF9798427E8D86800B53125 /* ConfigManager.swift in Sources */,
+				0B1EF4E427820C5D009AF214 /* SuburiMeter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4EB27820C61009AF214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1EF4F427820C62009AF214 /* SuburiMeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1EF4F527820C62009AF214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1EF50027820C62009AF214 /* SuburiMeterUITestsLaunchTests.swift in Sources */,
+				0B1EF4FE27820C62009AF214 /* SuburiMeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B1EF4F127820C61009AF214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1EF4D527820C5D009AF214 /* SuburiMeter */;
+			targetProxy = 0B1EF4F027820C61009AF214 /* PBXContainerItemProxy */;
+		};
+		0B1EF4FB27820C62009AF214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1EF4D527820C5D009AF214 /* SuburiMeter */;
+			targetProxy = 0B1EF4FA27820C62009AF214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B1EF4DF27820C5D009AF214 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1EF4E027820C5D009AF214 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B1EF4E727820C61009AF214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1EF4E827820C61009AF214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B1EF50127820C62009AF214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B1EF50227820C62009AF214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1EF50427820C62009AF214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535000B6AE0DF3D7BC4F9E49 /* Pods-SuburiMeter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuburiMeter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "素振りメーター";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "［許可］を選択すると興味のない広告が表示されにくくなります";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B1EF50527820C62009AF214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A215F0FA27D95E8EA1C9A904 /* Pods-SuburiMeter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuburiMeter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "素振りメーター";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "［許可］を選択すると興味のない広告が表示されにくくなります";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B1EF50727820C62009AF214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F8C3777D2C3650780042EF /* Pods-SuburiMeterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuburiMeter.app/SuburiMeter";
+			};
+			name = Debug;
+		};
+		0B1EF50827820C62009AF214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11B5CCCCF79FA962CA97AD9 /* Pods-SuburiMeterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuburiMeter.app/SuburiMeter";
+			};
+			name = Release;
+		};
+		0B1EF50A27820C62009AF214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC5FB30B5E980FFD0C0B73A3 /* Pods-SuburiMeter-SuburiMeterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuburiMeter;
+			};
+			name = Debug;
+		};
+		0B1EF50B27820C62009AF214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F166970FAE94468517A88313 /* Pods-SuburiMeter-SuburiMeterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNCW72YDW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatsuo.SuburiMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuburiMeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B1EF4D127820C5D009AF214 /* Build configuration list for PBXProject "SuburiMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1EF50127820C62009AF214 /* Debug */,
+				0B1EF50227820C62009AF214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1EF50327820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1EF50427820C62009AF214 /* Debug */,
+				0B1EF50527820C62009AF214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1EF50627820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1EF50727820C62009AF214 /* Debug */,
+				0B1EF50827820C62009AF214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1EF50927820C62009AF214 /* Build configuration list for PBXNativeTarget "SuburiMeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1EF50A27820C62009AF214 /* Debug */,
+				0B1EF50B27820C62009AF214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B1EF4E227820C5D009AF214 /* SuburiMeter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B1EF4E327820C5D009AF214 /* SuburiMeter.xcdatamodel */,
+			);
+			currentVersion = 0B1EF4E327820C5D009AF214 /* SuburiMeter.xcdatamodel */;
+			path = SuburiMeter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0B1EF4CE27820C5D009AF214 /* Project object */;
+}
