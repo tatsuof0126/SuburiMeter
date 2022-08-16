@@ -55,8 +55,8 @@ class ResultInputViewController: CommonViewController {
         
         
         // テストコード
-        let suburiResultList = SuburiResultManager.getAllSuburiResult()
-        print("SuburiResult count : \(suburiResultList.count)")
+        // let suburiResultList = SuburiResultManager.getAllSuburiResult()
+        // print("SuburiResult count : \(suburiResultList.count)")
         
         loadBannerView()
     }

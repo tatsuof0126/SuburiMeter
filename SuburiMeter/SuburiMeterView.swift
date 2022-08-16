@@ -71,7 +71,16 @@ class SuburiMeterView: UIView {
             NSAttributedString.Key.foregroundColor : UIColor.black,
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18),
         ])
-
+        
+        // 目標達成している場合
+        if height == 300 {
+            let achievementStr = "目標達成！"
+            achievementStr.draw(at: CGPoint(x: 60, y: 140), withAttributes: [
+                NSAttributedString.Key.foregroundColor : UIColor.red,
+                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 50),
+            ])
+        }
+        
     }
     
 }
